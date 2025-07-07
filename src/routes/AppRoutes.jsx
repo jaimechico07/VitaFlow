@@ -6,6 +6,7 @@ import { createBrowserRouter } from 'react-router-dom';
 const LazyLoginPage = lazy(() => import('../pages/Index'));
 const LazyHome = lazy(() => import('../pages/Home'));
 const LazyPrestamos = lazy(() => import('../pages/prestamosPage/PrestamosPage'));
+const LazyHabitos = lazy(() => import('../pages/habitosPage/HabitosPage'));
 
 export const router = createBrowserRouter([
     {
@@ -19,5 +20,9 @@ export const router = createBrowserRouter([
     {
         path: '/prestamos',
         element: <LazyPrestamos />,
+    },
+    {
+        path: '/habitos',
+        element: <LazyHabitos />,
     },
 ]);

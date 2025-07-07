@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../../firebase/firebase";
 import { ref, push, onValue, update } from "firebase/database";
-import { Toaster, toast } from 'sonner';
+import { toast } from 'sonner';
 import Header from "../../components/Header";
 
 
@@ -182,7 +182,6 @@ function PrestamosPage() {
 
     return (
         <>
-            <Toaster richColors />
             <div className="container-prestamos">
                 <Header title="Gestión de Préstamos" />
                 <FormPrestamos registrarPrestamo={registrarPrestamo} form={form} handleChange={handleChange} />

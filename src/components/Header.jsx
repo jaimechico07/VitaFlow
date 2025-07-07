@@ -19,7 +19,7 @@ const Header = ({ title }) => {
   };
 
   return (
-    <header className="flex justify-between bg-gray-800 p-4 items-center">
+    <header className="flex justify-between bg-gray-800 p-4 items-center fixed top-0 left-0 right-0">
       <h1 className="text-white text-xl font-bold">{title}</h1>
       <div className="flex items-center space-x-4">
         {user && (
