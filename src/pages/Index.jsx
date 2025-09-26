@@ -22,8 +22,8 @@ const LoginPage = () => {
 
     return (
         <div className="login-container ">
-            <h2>Bienvenido a la Gestión de Préstamos</h2>
-            <p>Por favor, inicia sesión para continuarss</p>
+            <h2>Bienvenido</h2>
+            <p>Por favor, inicia sesión para continuar</p>
             <button onClick={login} className="btn-google">
                 <span>Iniciar sesión con</span>
                 <img src="/google.png" alt="Google" />
